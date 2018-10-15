@@ -1,0 +1,54 @@
+<root>
+    <Interfaces>
+    </Interfaces>
+
+	<Components>
+		<turnManager>
+			<Type>				TurnManager 	 </Type>
+            <Persistent>      false            </Persistent>
+		</turnManager>
+	</Components>
+
+	<Properties>
+
+        <playerIDList>
+			<Type>			ARRAY <of> ENTITY_ID	</of>				</Type>
+			<Flags>			BASE				</Flags>
+        </playerIDList>
+
+		<playerIDListC>
+			<Type>			ARRAY <of> ENTITY_ID	</of>				</Type>
+			<Flags>			CELL_PUBLIC						</Flags>
+        </playerIDListC>
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+		<onEnterBattleField>
+			<Arg>	ENTITYCALL 		</Arg>
+		</onEnterBattleField>
+
+		<onLeaveBattleField>
+			<Arg>	ENTITYCALL 		</Arg>
+		</onLeaveBattleField>
+
+        <getCell>
+		</getCell>
+
+	</BaseMethods>
+
+	<CellMethods>
+
+        <onClientBattleFieldReady>
+            <Exposed/>
+		</onClientBattleFieldReady>
+
+		<endTurn>
+            <Exposed/>
+		</endTurn>
+	</CellMethods>
+
+</root>

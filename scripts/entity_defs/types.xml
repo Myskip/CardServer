@@ -1,0 +1,64 @@
+<root>
+    <BOOL>				UINT8		</BOOL>
+    <DBID>				UINT64		</DBID>
+    <ENTITY_ID>		INT32		</ENTITY_ID>
+    <CARD_ID>			INT32		</CARD_ID>
+    <HERO_ID>			INT32		</HERO_ID>
+
+    <Card_INFOS>	FIXED_DICT
+
+        <implementedBy>Card_INFOS.card_info_inst</implementedBy>
+
+        <Properties>
+
+            <name>
+                <Type>	    UNICODE	    </Type>
+            </name>
+
+            <cardScript>
+                <Type>	    UNICODE	    </Type>
+            </cardScript>
+
+            <type>
+                <Type>	    UINT8	    </Type>
+            </type>
+
+            <cardID>
+                <Type>	    CARD_ID	    </Type>
+            </cardID>
+
+            <powerNum>
+                <Type>  	UINT8	    </Type>
+            </powerNum>
+
+            <skillType>
+                <Type>	    UINT8	    </Type>
+            </skillType>
+
+            <isDirected>
+                <Type>  	UINT8	    </Type>
+            </isDirected>
+
+            <skillScript>
+                <Type>	    UNICODE	    </Type>
+            </skillScript>
+
+        </Properties>
+    </Card_INFOS>
+
+    <Avatar_INFOS>	FIXED_DICT
+        <implementedBy>Avatar_INFOS.avatar_info_inst</implementedBy>
+
+        <Properties>
+
+            <name>
+                <Type>	UNICODE	</Type>
+            </name>
+
+            <gems>
+                <Type>	UINT32	</Type>
+            </gems>
+
+        </Properties>
+    </Avatar_INFOS>
+</root>

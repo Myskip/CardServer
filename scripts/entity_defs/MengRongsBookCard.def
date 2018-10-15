@@ -1,0 +1,25 @@
+<root>
+	<Interfaces>
+	</Interfaces>
+
+	<Components>
+		<card>
+			<Type>				Card 			</Type>
+            <Persistent>      false            </Persistent>
+		</card>
+	</Components>
+
+	<Properties>
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

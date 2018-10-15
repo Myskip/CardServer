@@ -1,0 +1,31 @@
+<root>
+	<Properties>
+		<avatarDBId>
+			<Type>			DBID				</Type>
+			<Flags>			BASE		    </Flags>
+			<Default>		0				</Default>
+            <Persistent>		true				</Persistent>
+		</avatarDBId>
+	</Properties>
+
+	<ClientMethods>
+		<onHasAvatar>
+			<Arg>	BOOL 		</Arg>
+		</onHasAvatar>
+	</ClientMethods>
+
+	<BaseMethods>
+		<reqHasAvatar>
+            <Exposed/>
+		</reqHasAvatar>
+        <createAvatar>
+            <Exposed/>
+			<Arg>	Avatar_INFOS 		</Arg>
+		</createAvatar>
+
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

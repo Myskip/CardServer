@@ -1,0 +1,114 @@
+<root>
+	<Properties>
+		<name>
+			// 属性类型
+			<Type>			STRING				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			BASE_AND_CLIENT				</Flags>
+
+			// (可选)
+			// 是否存储到数据库
+			<Persistent>		true				</Persistent>
+
+			// (可选)
+			// 存储到数据库中的最大长度
+			<DatabaseLength> 	200				</DatabaseLength>
+
+			// (可选)
+			// 数据库索引， 支持UNIQUE与INDEX
+			<Index>			INDEX				</Index>
+		</name>
+
+        <nameC>
+			// 属性类型
+			<Type>			STRING				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			ALL_CLIENTS				</Flags>
+
+			// (可选)
+			// 是否存储到数据库
+			<Persistent>		true				</Persistent>
+
+			// (可选)
+			// 存储到数据库中的最大长度
+			<DatabaseLength> 	200				</DatabaseLength>
+
+			// (可选)
+			// 数据库索引， 支持UNIQUE与INDEX
+			<Index>			INDEX				</Index>
+		</nameC>
+
+		<gems>
+			// 属性类型
+			<Type>			UINT32				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			BASE_AND_CLIENT				</Flags>
+
+			// (可选)
+			// 是否存储到数据库
+			<Persistent>		true				</Persistent>
+
+			// (可选)
+			// 存储到数据库中的最大长度
+			<DatabaseLength> 	200				</DatabaseLength>
+
+			// (可选)
+			// 数据库索引， 支持UNIQUE与INDEX
+			<Index>			INDEX				</Index>
+		</gems>
+
+		<battleFieldEid>
+			// 属性类型
+			<Type>			ENTITY_ID				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			CELL_PUBLIC				</Flags>
+
+			// (可选)
+			// 是否存储到数据库
+			<Persistent>		false				</Persistent>
+		</battleFieldEid>
+
+		<tableID>
+			// 属性类型
+			<Type>			UINT8				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			ALL_CLIENTS				</Flags>
+		</tableID>>
+
+	</Properties>
+
+	<ClientMethods>
+		<onBattleFieldStart>
+		</onBattleFieldStart>
+	</ClientMethods>
+
+	<BaseMethods>
+
+		<setName>
+			<Exposed/>
+			<Arg>	STRING 		</Arg>
+		</setName>
+
+		<reqMatch>
+			<Exposed/>
+			<Arg>	HERO_ID 		</Arg>
+		</reqMatch>
+
+        <enterBattleField>
+			<Arg>	ENTITYCALL 		</Arg>
+		</enterBattleField>
+
+		<onBattleFieldEnd>
+			<Arg>	ENTITYCALL 		</Arg>
+		</onBattleFieldEnd>
+	</BaseMethods>
+
+	<CellMethods>
+
+		<drawCard>
+			<Exposed/>
+		</drawCard>
+
+	</CellMethods>
+
+</root>

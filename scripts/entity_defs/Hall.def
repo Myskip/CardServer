@@ -1,0 +1,22 @@
+<root>
+	<Properties>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+        <reqMatch>
+			<Arg>	ENTITY_ID 		</Arg>
+		</reqMatch>
+
+        <onBattleFieldReady>
+			<Arg>	ENTITYCALL 		</Arg>
+		</onBattleFieldReady>
+
+	</BaseMethods>
+
+	<CellMethods>
+	</CellMethods>
+
+</root>

@@ -1,0 +1,30 @@
+<root>
+
+	<Properties>
+		<battleFieldEid>
+			// 属性类型
+			<Type>			ENTITY_ID				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			CELL_PUBLIC				</Flags>
+		</battleFieldEid>
+
+		<cardsNum>
+			// 属性类型
+			<Type>			INT32    				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			ALL_CLIENTS				</Flags>
+		</cardsNum>
+
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<BaseMethods>
+	</BaseMethods>
+
+	<CellMethods>
+
+	</CellMethods>
+
+</root>
