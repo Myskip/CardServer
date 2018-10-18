@@ -1,0 +1,21 @@
+<root>
+	<Properties>
+		<turnIndex>
+			<Type>			INT32				</Type>
+            <Flags>			ALL_CLIENTS				</Flags>
+            <Default>		0				        </Default>
+		</turnIndex>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<CellMethods>
+
+        <endTurn>
+			<Exposed/>
+		</endTurn>
+
+	</CellMethods>
+
+</root>

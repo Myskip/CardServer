@@ -1,0 +1,30 @@
+<root>
+	<Properties>
+		<cardInfo>
+			// 属性类型
+			<Type>			Card_INFOS				</Type>
+			// 属性的作用域 (参考下方:属性作用域章节)
+			<Flags>			ALL_CLIENTS				</Flags>
+		</cardInfo>
+
+		<drawedBy>
+			<Type>			ENTITY_ID				</Type>
+            <Flags>			ALL_CLIENTS				</Flags>
+            <Default>		0				        </Default>
+		</drawedBy>
+	</Properties>
+
+	<ClientMethods>
+        <Test>
+        </Test>
+	</ClientMethods>
+
+	<CellMethods>
+		<use>
+			// (可选)
+			// 定义了此标记则允许客户端调用,否则仅服务端内部暴露
+			<Arg>	ENTITY_ID 		</Arg>
+		</use>
+	</CellMethods>
+
+</root>
